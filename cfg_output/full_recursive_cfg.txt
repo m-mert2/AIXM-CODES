@@ -1,0 +1,1360 @@
+G_FULL_XML:
+
+S -> <message_AIXMBasicMessage>
+
+<aixm_ARP> -> <aixm_ElevatedPoint>
+
+<aixm_AeronauticalGroundLight> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AeronauticalGroundLightTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_colour> <aixm_flashing> <aixm_aerodromeBeacon> <aixm_location> <aixm_annotation>
+                                        | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_colour> <aixm_flashing> <aixm_location> <aixm_annotation>
+
+<aixm_AirTrafficControlService> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AirTrafficControlServiceTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_serviceProvider> <aixm_call_sign> <aixm_radioCommunication> <aixm_radioCommunication> <aixm_radioCommunication> <aixm_radioCommunication> <aixm_availability> <aixm_type> <aixm_clientAirspace> <aixm_clientRoute> <aixm_clientHolding>
+                                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_serviceProvider> <aixm_call_sign> <aixm_radioCommunication> <aixm_radioCommunication> <aixm_type> <aixm_clientAirspace>
+
+<aixm_AircraftStand> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AircraftStandTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_type> <aixm_location> <aixm_apronLocation> <aixm_availability>
+
+<aixm_AirportHeliport> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AirportHeliportAvailability> -> <aixm_operationalStatus> <aixm_usage>
+                                   | <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_specialDateAuthority> <aixm_operationalStatus> <aixm_usage>
+                                   | <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_operationalStatus> <aixm_usage>
+
+<aixm_AirportHeliportResponsibilityOrganisation> -> <aixm_role> <aixm_theOrganisationAuthority>
+
+<aixm_AirportHeliportTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_locationIndicatorICAO> <aixm_designatorIATA> <aixm_type> <aixm_certifiedICAO> <aixm_controlType> <aixm_fieldElevation> <aixm_fieldElevationAccuracy> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_magneticVariationChange> <aixm_referenceTemperature> <aixm_transitionAltitude> <aixm_certificationDate> <aixm_certificationExpirationDate> <aixm_servedCity> <aixm_responsibleOrganisation> <aixm_ARP> <aixm_availability> <aixm_annotation> <aixm_annotation>
+                                | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_locationIndicatorICAO> <aixm_designatorIATA> <aixm_type> <aixm_certifiedICAO> <aixm_controlType> <aixm_fieldElevation> <aixm_fieldElevationAccuracy> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_magneticVariationChange> <aixm_referenceTemperature> <aixm_transitionAltitude> <aixm_certificationDate> <aixm_certificationExpirationDate> <aixm_servedCity> <aixm_responsibleOrganisation> <aixm_ARP> <aixm_availability> <aixm_availability> <aixm_annotation> <aixm_annotation>
+
+<aixm_AirportHeliportUsage> -> <aixm_type> <aixm_operation>
+                            | <aixm_type> <aixm_selection>
+
+<aixm_Airspace> -> <gml_identifier> <aixm_timeSlice>
+                | <gml_identifier> <gml_boundedBy> <aixm_timeSlice>
+
+<aixm_AirspaceActivation> -> <aixm_status>
+                          | <aixm_timeInterval> <aixm_activity> <aixm_status>
+                          | <aixm_timeInterval> <aixm_timeInterval> <aixm_activity> <aixm_status> <aixm_user>
+                          | <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_activity> <aixm_status>
+
+<aixm_AirspaceGeometryComponent> -> <aixm_operation> <aixm_operationSequence> <aixm_theAirspaceVolume>
+                                 | <aixm_theAirspaceVolume>
+
+<aixm_AirspaceLayer> -> <aixm_discreteLevelSeries>
+                     | <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_altitudeInterpretation>
+                     | <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_altitudeInterpretation>
+                     | <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> 
+                       <aixm_altitudeInterpretation>
+
+<aixm_AirspaceLayerClass> -> <aixm_annotation> <aixm_classification>
+                          | <aixm_classification>
+                          | <aixm_classification> <aixm_associatedLevels>
+
+<aixm_AirspaceTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_class> <aixm_geometryComponent> <aixm_annotation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_designatorICAO> <aixm_class> <aixm_protectedRoute> <aixm_geometryComponent>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_geometryComponent> <aixm_geometryComponent>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_localType> <aixm_name> <aixm_controlType> <aixm_geometryComponent> <aixm_activation> <aixm_annotation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_class> <aixm_geometryComponent> <aixm_annotation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_class> <aixm_geometryComponent> <aixm_geometryComponent> <aixm_annotation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_designatorICAO> <aixm_class> <aixm_class> <aixm_class> <aixm_geometryComponent> <aixm_annotation> <aixm_annotation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_geometryComponent>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_geometryComponent> <aixm_activation>
+                         | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_geometryComponent> <aixm_activation> <aixm_annotation>
+
+<aixm_AirspaceVolume> -> <aixm_contributorAirspace>
+                      | <aixm_upperLimit> <aixm_lowerLimit> <aixm_contributorAirspace>
+                      | <aixm_upperLimit> <aixm_lowerLimit> <aixm_horizontalProjection>
+                      | <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_horizontalProjection>
+                      | <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_horizontalProjection> <aixm_annotation>
+                      | <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_horizontalProjection>
+                      | <aixm_width> <aixm_centreline>
+
+<aixm_AirspaceVolumeDependency> -> <aixm_dependency> <aixm_theAirspace>
+
+<aixm_AngleIndication> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AngleIndicationTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_angle> <aixm_angleType> <aixm_indicationDirection> <aixm_fix> <aixm_pointChoice_navaidSystem> <aixm_annotation>
+
+<aixm_AngleUse> -> <aixm_theAngleIndication>
+
+<aixm_ApproachLightingSystem> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_ApproachLightingSystemTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_classICAO> <aixm_type> <aixm_length> <aixm_sequencedFlashing> <aixm_servedRunwayDirection>
+                                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_classICAO> <aixm_type> <aixm_length> <aixm_sequencedFlashing> <aixm_servedRunwayDirection>
+
+<aixm_Apron> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_ApronAreaAvailability> -> <aixm_operationalStatus>
+
+<aixm_ApronElement> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_ApronElementTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_associatedApron> <aixm_extent>
+
+<aixm_ApronTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_associatedAirportHeliport>
+
+<aixm_AuthorityForAirspace> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_AuthorityForAirspaceTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_responsibleOrganisation> <aixm_assignedAirspace>
+
+<aixm_AuthorityForNavaidEquipment> -> <aixm_theOrganisationAuthority>
+
+<aixm_CallsignDetail> -> <aixm_callSign> <aixm_language>
+
+<aixm_ChangeOverPoint> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_ChangeOverPointTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_distance> <aixm_applicableRoutePortion>
+
+<aixm_CircleSector> -> <aixm_arcDirection> <aixm_fromAngle> <aixm_toAngle> <aixm_outerDistance>
+
+<aixm_City> -> <aixm_name>
+
+<aixm_ConditionCombination> -> <aixm_logicalOperator> <aixm_flight>
+                            | <aixm_logicalOperator> <aixm_flight> <aixm_flight>
+
+<aixm_ContactInformation> -> <aixm_address> <aixm_networkNode> <aixm_phoneFax>
+                          | <aixm_phoneFax>
+
+<aixm_Curve> -> <gml_segments>
+             | <gml_segments> <aixm_annotation>
+             | <gml_segments> <aixm_horizontalAccuracy>
+
+<aixm_DME> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_DMETimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_location> <aixm_authority> <aixm_availability> <aixm_channel>
+                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_location> <aixm_authority> <aixm_channel>
+
+<aixm_DesignatedPoint> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_DesignatedPointTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_type> <aixm_name> <aixm_location>
+
+<aixm_DistanceIndication> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_DistanceIndicationTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_distance> <aixm_type> <aixm_fix> <aixm_pointChoice_navaidSystem> <aixm_annotation>
+                                   | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_distance> <aixm_type> <aixm_pointChoice_navaidSystem> <aixm_annotation>
+
+<aixm_ElevatedCurve> -> <gml_segments>
+                     | <gml_segments> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_geoidUndulation> <aixm_verticalDatum> <aixm_verticalAccuracy>
+                     | <gml_segments> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_verticalDatum> <aixm_verticalAccuracy>
+
+<aixm_ElevatedPoint> -> <gml_pos>
+                     | <gml_pos> <aixm_elevation>
+                     | <gml_pos> <aixm_horizontalAccuracy>
+                     | <gml_pos> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_geoidUndulation> <aixm_verticalAccuracy>
+                     | <gml_pos> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_geoidUndulation> <aixm_verticalDatum> <aixm_verticalAccuracy>
+                     | <gml_pos> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_verticalDatum> <aixm_verticalAccuracy>
+
+<aixm_ElevatedSurface> -> <gml_patches>
+                       | <gml_patches> <aixm_elevation>
+                       | <gml_patches> <aixm_horizontalAccuracy>
+                       | <gml_patches> <aixm_horizontalAccuracy> <aixm_elevation> <aixm_verticalDatum> <aixm_verticalAccuracy>
+
+<aixm_EnRouteSegmentPoint> -> <aixm_facilityMakeup>
+                           | <aixm_facilityMakeup> <aixm_pointChoice_fixDesignatedPoint>
+                           | <aixm_pointChoice_navaidSystem>
+                           | <aixm_pointChoice_position>
+                           | <aixm_reportingATC> <aixm_facilityMakeup> <aixm_pointChoice_fixDesignatedPoint>
+                           | <aixm_reportingATC> <aixm_pointChoice_fixDesignatedPoint>
+                           | <aixm_reportingATC> <aixm_pointChoice_navaidSystem>
+
+<aixm_FlightCharacteristic> -> <aixm_rule>
+
+<aixm_GeoBorder> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_GeoBorderTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_border>
+
+<aixm_Glidepath> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_GlidepathTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_annotation> <aixm_frequency> <aixm_slope> <aixm_angleAccuracy> <aixm_rdh> <aixm_rdhAccuracy>
+
+<aixm_GuidanceLine> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_GuidanceLineMarking> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_GuidanceLineMarkingTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedGuidanceLine>
+                                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedGuidanceLine>
+                                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_markedGuidanceLine>
+
+<aixm_GuidanceLineTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_type> <aixm_extent>
+
+<aixm_HoldingPattern> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_HoldingPatternDistance> -> <aixm_length>
+
+<aixm_HoldingPatternDuration> -> <aixm_duration>
+
+<aixm_HoldingPatternTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_lowerLimit> <aixm_speedLimit> <aixm_outboundLegSpan_endTime> <aixm_holdingPoint>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_outboundCourse> <aixm_outboundCourseType> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_lowerLimit> <aixm_speedLimit> <aixm_outboundLegSpan_endTime> <aixm_holdingPoint>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_speedLimit> <aixm_outboundLegSpan_endDistance> <aixm_holdingPoint>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_speedLimit> <aixm_outboundLegSpan_endPoint> <aixm_holdingPoint>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_speedLimit> <aixm_outboundLegSpan_endTime> <aixm_holdingPoint>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_outboundCourse> <aixm_outboundCourseType> <aixm_inboundCourse> <aixm_turnDirection> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_speedLimit> <aixm_outboundLegSpan_endTime> <aixm_holdingPoint> <aixm_annotation>
+
+<aixm_InformationService> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_InformationServiceTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_serviceProvider> <aixm_call_sign> <aixm_radioCommunication> <aixm_type> <aixm_clientAirspace>
+
+<aixm_LightElement> -> <aixm_colour>
+                    | <aixm_colour> <aixm_intensityLevel> <aixm_intensity> <aixm_type>
+                    | <aixm_colour> <aixm_intensityLevel> <aixm_intensity> <aixm_type> <aixm_availability>
+                    | <aixm_colour> <aixm_intensityLevel> <aixm_type>
+                    | <aixm_colour> <aixm_type>
+                    | <aixm_colour> <aixm_type> <aixm_location>
+
+<aixm_LinguisticNote> -> <aixm_note>
+
+<aixm_Localizer> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_LocalizerTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_annotation> <aixm_frequency> <aixm_magneticBearing> <aixm_magneticBearingAccuracy> <aixm_trueBearing> <aixm_trueBearingAccuracy> <aixm_declination>
+
+<aixm_MarkerBeacon> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_MarkerBeaconTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_annotation> <aixm_annotation> <aixm_frequency> <aixm_auralMorseCode>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_annotation> <aixm_frequency>
+
+<aixm_MarkingElement> -> <aixm_colour> <aixm_style> <aixm_extent_surfaceExtent>
+
+<aixm_NDB> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_NDBTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_annotation> <aixm_frequency> <aixm_class>
+                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_magneticVariationAccuracy> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_availability> <aixm_frequency> <aixm_class>
+
+<aixm_Navaid> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_NavaidComponent> -> <aixm_collocationGroup> <aixm_markerPosition> <aixm_theNavaidEquipment>
+                       | <aixm_collocationGroup> <aixm_theNavaidEquipment>
+                       | <aixm_markerPosition> <aixm_theNavaidEquipment>
+                       | <aixm_theNavaidEquipment>
+
+<aixm_NavaidEquipmentDistance> -> <aixm_distance> <aixm_distanceAccuracy> <aixm_theNavaidEquipment>
+
+<aixm_NavaidOperationalStatus> -> <aixm_timeInterval> <aixm_operationalStatus>
+
+<aixm_NavaidTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_navaidEquipment> <aixm_location>
+                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_navaidEquipment> <aixm_location> <aixm_servedAirport>
+                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_location>
+                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_location> <aixm_servedAirport>
+                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_designator> <aixm_name> <aixm_signalPerformance> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_navaidEquipment> <aixm_location> <aixm_runwayDirection> <aixm_servedAirport>
+
+<aixm_Note> -> <aixm_propertyName> <aixm_purpose> <aixm_translatedNote>
+            | <aixm_propertyName> <aixm_translatedNote>
+            | <aixm_purpose> <aixm_translatedNote>
+            | <aixm_translatedNote>
+
+<aixm_ObstacleArea> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_ObstacleAreaTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerAirport> <aixm_obstacle>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerAirport> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerOrganisation> <aixm_surfaceExtent> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway> <aixm_obstacle>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway> <aixm_obstacle> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway> <aixm_obstacle> <aixm_obstacle> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_type> <aixm_reference_ownerRunway> <aixm_obstacle> <aixm_obstacle> <aixm_obstacle>
+
+<aixm_OnlineContact> -> <aixm_network> <aixm_eMail>
+
+<aixm_OrganisationAuthority> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_OrganisationAuthorityAssociation> -> <aixm_type> <aixm_theOrganisationAuthority>
+
+<aixm_OrganisationAuthorityTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_contact>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_relatedOrganisationAuthority>
+
+<aixm_Point> -> <gml_pos> <aixm_annotation>
+             | <gml_pos> <aixm_horizontalAccuracy>
+
+<aixm_PointReference> -> <aixm_facilityDistance>
+                      | <aixm_point> <aixm_facilityAngle> <aixm_facilityDistance>
+
+<aixm_PostalAddress> -> <aixm_deliveryPoint> <aixm_city> <aixm_postalCode> <aixm_country>
+
+<aixm_RadioCommunicationChannel> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RadioCommunicationChannelTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_frequencyTransmission> <aixm_frequencyReception>
+                                          | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_rank> <aixm_frequencyTransmission> <aixm_frequencyReception>
+                                          | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_rank> <aixm_frequencyTransmission> <aixm_frequencyReception> <aixm_annotation>
+                                          | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_rank> <aixm_frequencyTransmission> <aixm_frequencyReception> <aixm_availability>
+                                          | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_rank> <aixm_frequencyTransmission> <aixm_frequencyReception> <aixm_selectiveCall>
+
+<aixm_RadioCommunicationOperationalStatus> -> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_timeInterval> <aixm_annotation>
+
+<aixm_RadioFrequencyArea> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RadioFrequencyAreaTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_signalType> <aixm_equipment_navaidEquipment> <aixm_sector>
+
+<aixm_Route> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RouteAvailability> -> <aixm_direction> <aixm_levels>
+
+<aixm_RoutePortion> -> <aixm_start_fixDesignatedPoint> <aixm_referencedRoute> <aixm_end_fixDesignatedPoint>
+                    | <aixm_start_navaidSystem> <aixm_referencedRoute> <aixm_end_navaidSystem>
+
+<aixm_RouteSegment> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RouteSegmentTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_level> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_minimumObstacleClearanceAltitude> <aixm_pathType> <aixm_magneticTrack> <aixm_reverseMagneticTrack> <aixm_length> <aixm_widthLeft> <aixm_widthRight> <aixm_navigationType> <aixm_start> <aixm_routeFormed> <aixm_curveExtent> <aixm_end> <aixm_availability> <aixm_availability> <aixm_annotation> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_level> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_pathType> <aixm_length> <aixm_start> <aixm_routeFormed> <aixm_curveExtent> <aixm_end>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_level> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_pathType> <aixm_magneticTrack> <aixm_reverseMagneticTrack> <aixm_length> <aixm_widthLeft> <aixm_widthRight> <aixm_minimumEnrouteAltitude> <aixm_navigationType> <aixm_start> <aixm_routeFormed> <aixm_curveExtent> <aixm_end> <aixm_availability> <aixm_availability> <aixm_annotation> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_level> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_pathType> <aixm_magneticTrack> <aixm_reverseMagneticTrack> <aixm_length> <aixm_widthLeft> <aixm_widthRight> <aixm_navigationType> <aixm_start> <aixm_routeFormed> <aixm_curveExtent> <aixm_end> <aixm_annotation>
+                             | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_upperLimit> <aixm_upperLimitReference> <aixm_lowerLimit> <aixm_lowerLimitReference> <aixm_pathType> <aixm_magneticTrack> <aixm_reverseMagneticTrack> <aixm_length> <aixm_navigationType> <aixm_start> <aixm_routeFormed> <aixm_curveExtent> <aixm_end> <aixm_availability> <aixm_availability> <aixm_annotation>
+
+<aixm_RouteTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designatorPrefix> <aixm_designatorSecondLetter> <aixm_designatorNumber> <aixm_type> <aixm_flightRule>
+                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designatorSecondLetter> <aixm_designatorNumber> <aixm_type> <aixm_flightRule>
+
+<aixm_Runway> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayCentrelinePoint> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayCentrelinePointTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_location> <aixm_onRunway> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_role> <aixm_location> <aixm_onRunway>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_role> <aixm_location> <aixm_onRunway> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_role> <aixm_location> <aixm_onRunway> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance>
+                                      | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_role> <aixm_location> <aixm_onRunway> <aixm_associatedDeclaredDistance> <aixm_associatedDeclaredDistance> <aixm_navaidEquipment> <aixm_navaidEquipment>
+
+<aixm_RunwayDeclaredDistance> -> <aixm_type> <aixm_declaredValue>
+
+<aixm_RunwayDeclaredDistanceValue> -> <aixm_distance> <aixm_distanceAccuracy>
+
+<aixm_RunwayDirection> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayDirectionLightSystem> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayDirectionLightSystemTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_position> <aixm_associatedRunwayDirection>
+
+<aixm_RunwayDirectionTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_trueBearing> <aixm_trueBearingAccuracy> <aixm_elevationTDZ> <aixm_usedRunway>
+                                | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_trueBearing> <aixm_trueBearingAccuracy> <aixm_usedRunway>
+
+<aixm_RunwayElement> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayElementTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_associatedRunway> <aixm_extent>
+
+<aixm_RunwayMarking> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_RunwayMarkingTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+                              | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_markingLocation> <aixm_markedRunway>
+
+<aixm_RunwayTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_type> <aixm_nominalLength> <aixm_lengthAccuracy> <aixm_nominalWidth> <aixm_widthAccuracy> <aixm_lengthStrip> <aixm_widthStrip> <aixm_surfaceProperties> <aixm_associatedAirportHeliport>
+                       | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_type> <aixm_nominalLength> <aixm_lengthAccuracy> <aixm_nominalWidth> <aixm_widthAccuracy> <aixm_surfaceProperties> <aixm_associatedAirportHeliport>
+
+<aixm_SearchRescueService> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_SearchRescueServiceTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_flightOperations> <aixm_compliantICAO> <aixm_name> <aixm_serviceProvider> <aixm_type>
+
+<aixm_ServiceOperationalStatus> -> <aixm_timeInterval> <aixm_operationalStatus>
+
+<aixm_SpecialDate> -> <gml_identifier> <aixm_timeSlice>
+                   | <gml_identifier> <aixm_timeSlice> <aixm_timeSlice>
+
+<aixm_SpecialDateTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_dateDay> <aixm_dateYear> <aixm_name> <aixm_authority>
+                            | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_dateDay> <aixm_name> <aixm_authority>
+
+<aixm_Surface> -> <gml_patches>
+               | <gml_patches> <aixm_horizontalAccuracy>
+
+<aixm_SurfaceCharacteristics> -> <aixm_composition>
+                              | <aixm_composition> <aixm_classPCN> <aixm_pavementTypePCN> <aixm_pavementSubgradePCN> <aixm_maxTyrePressurePCN> <aixm_evaluationMethodPCN>
+                              | <aixm_composition> <aixm_surfaceCondition>
+
+<aixm_TACAN> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TACANTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_channel>
+
+<aixm_TaxiHoldingPosition> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TaxiHoldingPositionMarking> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TaxiHoldingPositionMarkingTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+                                           | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_markedTaxiHold>
+
+<aixm_TaxiHoldingPositionTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_landingCategory> <aixm_associatedGuidanceLine> <aixm_location>
+
+<aixm_Taxiway> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TaxiwayElement> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TaxiwayElementTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_associatedTaxiway> <aixm_extent>
+                               | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_type> <aixm_associatedTaxiway> <aixm_extent>
+
+<aixm_TaxiwayTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_designator> <aixm_width> <aixm_surfaceProperties> <aixm_associatedAirportHeliport>
+                        | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_width> <aixm_surfaceProperties> <aixm_associatedAirportHeliport>
+
+<aixm_TelephoneContact> -> <aixm_voice>
+                        | <aixm_voice> <aixm_facsimile>
+
+<aixm_Timesheet> -> <aixm_annotation>
+                 | <aixm_day> <aixm_dayTil> <aixm_startEvent> <aixm_endEvent>
+                 | <aixm_day> <aixm_startTime> <aixm_endTime>
+                 | <aixm_timeReference> <aixm_day> <aixm_startTime> <aixm_endEvent> <aixm_daylightSavingAdjust> <aixm_excluded>
+                 | <aixm_timeReference> <aixm_day> <aixm_startTime> <aixm_endTime> <aixm_daylightSavingAdjust>
+                 | <aixm_timeReference> <aixm_day> <aixm_startTime> <aixm_endTime> <aixm_daylightSavingAdjust> <aixm_excluded>
+                 | <aixm_timeReference> <aixm_startDate> <aixm_endDate> <aixm_day> <aixm_startTime> <aixm_endTime> <aixm_daylightSavingAdjust> <aixm_excluded>
+
+<aixm_TouchDownLiftOff> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_TouchDownLiftOffTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_length> <aixm_width> <aixm_slope> <aixm_aimingPoint> <aixm_extent> <aixm_surfaceProperties> <aixm_associatedAirportHeliport> <aixm_approachTakeOffArea> <aixm_annotation> <aixm_annotation>
+
+<aixm_Unit> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_UnitDependency> -> <aixm_type> <aixm_theUnit>
+
+<aixm_UnitTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name>
+                     | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_airportLocation>
+                     | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_compliantICAO> <aixm_ownerOrganisation> <aixm_contact>
+                     | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_compliantICAO> <aixm_position> <aixm_ownerOrganisation> <aixm_relatedUnit>
+
+<aixm_VOR> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_VORTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_location> <aixm_authority> <aixm_availability> <aixm_frequency> <aixm_zeroBearingDirection> <aixm_declination>
+                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_location> <aixm_authority> <aixm_type> <aixm_frequency>
+                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_type> <aixm_frequency>
+                    | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_designator> <aixm_name> <aixm_magneticVariation> <aixm_dateMagneticVariation> <aixm_location> <aixm_authority> <aixm_type> <aixm_frequency> <aixm_declination>
+
+<aixm_VerticalStructure> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_VerticalStructureLightingStatus> -> <aixm_timeInterval> <aixm_specialDateAuthority> <aixm_status>
+
+<aixm_VerticalStructurePart> -> <aixm_annotation> <aixm_type> <aixm_designator> <aixm_horizontalProjection_linearExtent>
+                             | <aixm_annotation> <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_constructionStatus> <aixm_designator> <aixm_horizontalProjection_linearExtent>
+                             | <aixm_annotation> <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_horizontalProjection_location>
+                             | <aixm_timeInterval> <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_horizontalProjection_location>
+                             | <aixm_type> <aixm_designator> <aixm_horizontalProjection_location>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_markingPattern> <aixm_markingFirstColour> <aixm_markingSecondColour> <aixm_horizontalProjection_surfaceExtent> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_constructionStatus> <aixm_designator> <aixm_horizontalProjection_location>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_constructionStatus> <aixm_markingPattern> <aixm_markingFirstColour> <aixm_markingSecondColour> <aixm_mobile> <aixm_frangible> <aixm_visibleMaterial> <aixm_designator> <aixm_horizontalProjection_location> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_designator> <aixm_horizontalProjection_location>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_designator> <aixm_horizontalProjection_surfaceExtent> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_frangible> <aixm_horizontalProjection_location> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_horizontalProjection_location>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_horizontalProjection_location> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_horizontalProjection_surfaceExtent>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_markingFirstColour> <aixm_horizontalProjection_linearExtent> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_markingFirstColour> <aixm_horizontalProjection_surfaceExtent> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_markingPattern> <aixm_markingFirstColour> <aixm_markingSecondColour> <aixm_designator> <aixm_horizontalProjection_location> <aixm_lighting>
+                             | <aixm_verticalExtent> <aixm_verticalExtentAccuracy> <aixm_type> <aixm_mobile> <aixm_horizontalProjection_linearExtent>
+
+<aixm_VerticalStructureTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_group> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_group> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_annotation> <aixm_annotation> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_annotation> <aixm_annotation> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_part> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_group> <aixm_length> <aixm_width> <aixm_radius> <aixm_lightingICAOStandard> <aixm_synchronisedLighting> <aixm_marker> <aixm_part> <aixm_annotation> <aixm_annotation> <aixm_annotation> <aixm_lightingAvailability>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_group> <aixm_length> <aixm_width> <aixm_radius> <aixm_lightingICAOStandard> <aixm_synchronisedLighting> <aixm_marker> <aixm_part> <aixm_hostedPassengerService> <aixm_supportedGroundLight> <aixm_hostedNavaidEquipment> <aixm_hostedSpecialNavStation> <aixm_hostedUnit> <aixm_hostedOrganisation> <aixm_supportedService> <aixm_annotation> <aixm_annotation> <aixm_annotation> <aixm_annotation> <aixm_lightingAvailability>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_group> <aixm_length> <aixm_width> <aixm_radius> <aixm_lightingICAOStandard> <aixm_synchronisedLighting> <aixm_part>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_hostedNavaidEquipment>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_part>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_markingICAOStandard> <aixm_radius> <aixm_part>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_correctionNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_radius> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_lighted> <aixm_length> <aixm_width> <aixm_radius> <aixm_part> <aixm_supportedService> <aixm_annotation>
+                                  | <gml_validTime> <aixm_interpretation> <aixm_sequenceNumber> <aixm_featureLifetime> <aixm_name> <aixm_type> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part> <aixm_part>
+
+<aixm_VisualGlideSlopeIndicator> -> <gml_identifier> <aixm_timeSlice>
+
+<aixm_VisualGlideSlopeIndicatorTimeSlice> -> <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_type> <aixm_position> <aixm_portable> <aixm_slopeAngle> <aixm_minimumEyeHeightOverThreshold> <aixm_runwayDirection>
+                                          | <gml_validTime> <aixm_interpretation> <aixm_element> <aixm_element> <aixm_element> <aixm_element> <aixm_type> <aixm_position> <aixm_portable> <aixm_slopeAngle> <aixm_minimumEyeHeightOverThreshold> <aixm_runwayDirection>
+
+<aixm_activation> -> <aixm_AirspaceActivation>
+
+<aixm_activity> -> <Text>
+                | ε
+
+<aixm_address> -> <aixm_PostalAddress>
+
+<aixm_aerodromeBeacon> -> ε
+
+<aixm_aimingPoint> -> <aixm_ElevatedPoint>
+
+<aixm_airportLocation> -> ε
+
+<aixm_altitudeInterpretation> -> <Text>
+
+<aixm_angle> -> <Text>
+
+<aixm_angleAccuracy> -> ε
+
+<aixm_angleType> -> <Text>
+
+<aixm_annotation> -> <aixm_Note>
+
+<aixm_applicableRoutePortion> -> <aixm_RoutePortion>
+
+<aixm_approachTakeOffArea> -> ε
+
+<aixm_apronLocation> -> ε
+
+<aixm_arcDirection> -> <Text>
+
+<aixm_assignedAirspace> -> ε
+
+<aixm_associatedAirportHeliport> -> ε
+
+<aixm_associatedApron> -> ε
+
+<aixm_associatedDeclaredDistance> -> <aixm_RunwayDeclaredDistance>
+
+<aixm_associatedGuidanceLine> -> ε
+
+<aixm_associatedLevels> -> <aixm_AirspaceLayer>
+
+<aixm_associatedRunway> -> ε
+
+<aixm_associatedRunwayDirection> -> ε
+
+<aixm_associatedTaxiway> -> ε
+
+<aixm_auralMorseCode> -> <Text>
+
+<aixm_authority> -> <aixm_AuthorityForNavaidEquipment>
+                 | ε
+
+<aixm_availability> -> <aixm_AirportHeliportAvailability>
+                    | <aixm_ApronAreaAvailability>
+                    | <aixm_NavaidOperationalStatus>
+                    | <aixm_RadioCommunicationOperationalStatus>
+                    | <aixm_RouteAvailability>
+                    | <aixm_ServiceOperationalStatus>
+                    | ε
+
+<aixm_border> -> <aixm_Curve>
+
+<aixm_callSign> -> <Text>
+
+<aixm_call_sign> -> <aixm_CallsignDetail>
+
+<aixm_centreline> -> <aixm_Curve>
+
+<aixm_certificationDate> -> ε
+
+<aixm_certificationExpirationDate> -> ε
+
+<aixm_certifiedICAO> -> ε
+
+<aixm_channel> -> <Text>
+
+<aixm_city> -> <Text>
+
+<aixm_class> -> <Text>
+             | <aixm_AirspaceLayerClass>
+
+<aixm_classICAO> -> <Text>
+
+<aixm_classPCN> -> <Text>
+
+<aixm_classification> -> <Text>
+
+<aixm_clientAirspace> -> ε
+
+<aixm_clientHolding> -> ε
+
+<aixm_clientRoute> -> <aixm_RoutePortion>
+
+<aixm_collocationGroup> -> <Text>
+
+<aixm_colour> -> <Text>
+              | ε
+
+<aixm_compliantICAO> -> <Text>
+
+<aixm_composition> -> <Text>
+
+<aixm_constructionStatus> -> <Text>
+                          | ε
+
+<aixm_contact> -> <aixm_ContactInformation>
+
+<aixm_contributorAirspace> -> <aixm_AirspaceVolumeDependency>
+
+<aixm_controlType> -> <Text>
+
+<aixm_correctionNumber> -> <Text>
+
+<aixm_country> -> <Text>
+
+<aixm_curveExtent> -> <aixm_Curve>
+
+<aixm_dateDay> -> <Text>
+
+<aixm_dateMagneticVariation> -> <Text>
+                             | ε
+
+<aixm_dateYear> -> <Text>
+
+<aixm_day> -> <Text>
+
+<aixm_dayTil> -> <Text>
+
+<aixm_daylightSavingAdjust> -> <Text>
+
+<aixm_declaredValue> -> <aixm_RunwayDeclaredDistanceValue>
+
+<aixm_declination> -> <Text>
+
+<aixm_deliveryPoint> -> <Text>
+
+<aixm_dependency> -> <Text>
+
+<aixm_designator> -> <Text>
+                  | ε
+
+<aixm_designatorIATA> -> ε
+
+<aixm_designatorICAO> -> <Text>
+
+<aixm_designatorNumber> -> <Text>
+
+<aixm_designatorPrefix> -> <Text>
+
+<aixm_designatorSecondLetter> -> <Text>
+
+<aixm_direction> -> <Text>
+
+<aixm_discreteLevelSeries> -> ε
+
+<aixm_distance> -> <Text>
+
+<aixm_distanceAccuracy> -> <Text>
+                        | ε
+
+<aixm_duration> -> <Text>
+
+<aixm_eMail> -> <Text>
+
+<aixm_element> -> <aixm_LightElement>
+               | <aixm_MarkingElement>
+
+<aixm_elevation> -> <Text>
+                 | ε
+
+<aixm_elevationTDZ> -> <Text>
+
+<aixm_end> -> <aixm_EnRouteSegmentPoint>
+
+<aixm_endDate> -> <Text>
+
+<aixm_endEvent> -> <Text>
+
+<aixm_endTime> -> <Text>
+
+<aixm_end_fixDesignatedPoint> -> ε
+
+<aixm_end_navaidSystem> -> ε
+
+<aixm_equipment_navaidEquipment> -> ε
+
+<aixm_evaluationMethodPCN> -> <Text>
+
+<aixm_excluded> -> <Text>
+
+<aixm_extent> -> <aixm_ElevatedCurve>
+              | <aixm_ElevatedSurface>
+
+<aixm_extent_surfaceExtent> -> <aixm_ElevatedSurface>
+
+<aixm_facilityAngle> -> <aixm_AngleUse>
+
+<aixm_facilityDistance> -> ε
+
+<aixm_facilityMakeup> -> <aixm_PointReference>
+
+<aixm_facsimile> -> <Text>
+
+<aixm_featureLifetime> -> <gml_TimePeriod>
+
+<aixm_fieldElevation> -> <Text>
+
+<aixm_fieldElevationAccuracy> -> <Text>
+
+<aixm_fix> -> ε
+
+<aixm_flashing> -> <Text>
+
+<aixm_flight> -> <aixm_FlightCharacteristic>
+
+<aixm_flightOperations> -> <Text>
+
+<aixm_flightRule> -> <Text>
+
+<aixm_frangible> -> <Text>
+                 | ε
+
+<aixm_frequency> -> <Text>
+                 | ε
+
+<aixm_frequencyReception> -> <Text>
+
+<aixm_frequencyTransmission> -> <Text>
+
+<aixm_fromAngle> -> <Text>
+
+<aixm_geoidUndulation> -> <Text>
+                       | ε
+
+<aixm_geometryComponent> -> <aixm_AirspaceGeometryComponent>
+
+<aixm_group> -> <Text>
+             | ε
+
+<aixm_holdingPoint> -> <aixm_EnRouteSegmentPoint>
+
+<aixm_horizontalAccuracy> -> <Text>
+                          | ε
+
+<aixm_horizontalProjection> -> <aixm_ElevatedSurface>
+                            | <aixm_Surface>
+
+<aixm_horizontalProjection_linearExtent> -> <aixm_ElevatedCurve>
+
+<aixm_horizontalProjection_location> -> <aixm_ElevatedPoint>
+
+<aixm_horizontalProjection_surfaceExtent> -> <aixm_ElevatedSurface>
+
+<aixm_hostedNavaidEquipment> -> ε
+
+<aixm_hostedOrganisation> -> ε
+
+<aixm_hostedPassengerService> -> ε
+
+<aixm_hostedSpecialNavStation> -> ε
+
+<aixm_hostedUnit> -> ε
+
+<aixm_inboundCourse> -> <Text>
+
+<aixm_indicationDirection> -> <Text>
+
+<aixm_intensity> -> ε
+
+<aixm_intensityLevel> -> <Text>
+                      | ε
+
+<aixm_interpretation> -> <Text>
+
+<aixm_landingCategory> -> <Text>
+
+<aixm_language> -> <Text>
+
+<aixm_length> -> <Text>
+              | ε
+
+<aixm_lengthAccuracy> -> <Text>
+                      | ε
+
+<aixm_lengthStrip> -> <Text>
+
+<aixm_level> -> <Text>
+
+<aixm_levels> -> <aixm_AirspaceLayer>
+
+<aixm_lighted> -> <Text>
+               | ε
+
+<aixm_lighting> -> <aixm_LightElement>
+
+<aixm_lightingAvailability> -> <aixm_VerticalStructureLightingStatus>
+                            | ε
+
+<aixm_lightingICAOStandard> -> <Text>
+                            | ε
+
+<aixm_localType> -> <Text>
+
+<aixm_location> -> <aixm_ElevatedPoint>
+                | <aixm_Point>
+                | ε
+
+<aixm_locationIndicatorICAO> -> <Text>
+
+<aixm_logicalOperator> -> <Text>
+
+<aixm_lowerLimit> -> <Text>
+                  | ε
+
+<aixm_lowerLimitReference> -> <Text>
+                           | ε
+
+<aixm_magneticBearing> -> <Text>
+
+<aixm_magneticBearingAccuracy> -> ε
+
+<aixm_magneticTrack> -> <Text>
+                     | ε
+
+<aixm_magneticVariation> -> <Text>
+                         | ε
+
+<aixm_magneticVariationAccuracy> -> <Text>
+                                 | ε
+
+<aixm_magneticVariationChange> -> <Text>
+
+<aixm_markedGuidanceLine> -> ε
+
+<aixm_markedRunway> -> ε
+
+<aixm_markedTaxiHold> -> ε
+
+<aixm_marker> -> ε
+
+<aixm_markerPosition> -> <Text>
+
+<aixm_markingFirstColour> -> <Text>
+                          | ε
+
+<aixm_markingICAOStandard> -> <Text>
+                           | ε
+
+<aixm_markingLocation> -> <Text>
+
+<aixm_markingPattern> -> <Text>
+                      | ε
+
+<aixm_markingSecondColour> -> <Text>
+                           | ε
+
+<aixm_maxTyrePressurePCN> -> <Text>
+
+<aixm_messageMetadata> -> <gmd_MD_Metadata>
+
+<aixm_minimumEnrouteAltitude> -> <Text>
+
+<aixm_minimumEyeHeightOverThreshold> -> <Text>
+
+<aixm_minimumObstacleClearanceAltitude> -> <Text>
+
+<aixm_mobile> -> <Text>
+
+<aixm_name> -> <Text>
+            | ε
+
+<aixm_navaidEquipment> -> <aixm_NavaidComponent>
+                       | <aixm_NavaidEquipmentDistance>
+
+<aixm_navigationType> -> <Text>
+
+<aixm_network> -> <Text>
+
+<aixm_networkNode> -> <aixm_OnlineContact>
+
+<aixm_nominalLength> -> <Text>
+
+<aixm_nominalWidth> -> <Text>
+
+<aixm_note> -> <Text>
+
+<aixm_obstacle> -> ε
+
+<aixm_onRunway> -> ε
+
+<aixm_operation> -> <Text>
+
+<aixm_operationSequence> -> <Text>
+
+<aixm_operationalStatus> -> <Text>
+
+<aixm_outboundCourse> -> <Text>
+
+<aixm_outboundCourseType> -> <Text>
+
+<aixm_outboundLegSpan_endDistance> -> <aixm_HoldingPatternDistance>
+
+<aixm_outboundLegSpan_endPoint> -> <aixm_EnRouteSegmentPoint>
+
+<aixm_outboundLegSpan_endTime> -> <aixm_HoldingPatternDuration>
+
+<aixm_outerDistance> -> <Text>
+
+<aixm_ownerOrganisation> -> ε
+
+<aixm_part> -> <aixm_VerticalStructurePart>
+
+<aixm_pathType> -> <Text>
+
+<aixm_pavementSubgradePCN> -> <Text>
+
+<aixm_pavementTypePCN> -> <Text>
+
+<aixm_phoneFax> -> <aixm_TelephoneContact>
+
+<aixm_point> -> ε
+
+<aixm_pointChoice_fixDesignatedPoint> -> ε
+
+<aixm_pointChoice_navaidSystem> -> ε
+
+<aixm_pointChoice_position> -> <aixm_ElevatedPoint>
+
+<aixm_portable> -> <Text>
+
+<aixm_position> -> <Text>
+                | <aixm_ElevatedPoint>
+
+<aixm_postalCode> -> <Text>
+
+<aixm_propertyName> -> <Text>
+
+<aixm_protectedRoute> -> ε
+
+<aixm_purpose> -> <Text>
+
+<aixm_radioCommunication> -> ε
+
+<aixm_radius> -> <Text>
+              | ε
+
+<aixm_rank> -> <Text>
+
+<aixm_rdh> -> <Text>
+
+<aixm_rdhAccuracy> -> ε
+
+<aixm_referenceTemperature> -> <Text>
+
+<aixm_reference_ownerAirport> -> ε
+
+<aixm_reference_ownerOrganisation> -> ε
+
+<aixm_reference_ownerRunway> -> ε
+
+<aixm_referencedRoute> -> ε
+
+<aixm_relatedOrganisationAuthority> -> <aixm_OrganisationAuthorityAssociation>
+
+<aixm_relatedUnit> -> <aixm_UnitDependency>
+
+<aixm_reportingATC> -> <Text>
+
+<aixm_responsibleOrganisation> -> <aixm_AirportHeliportResponsibilityOrganisation>
+                               | ε
+
+<aixm_reverseMagneticTrack> -> <Text>
+                            | ε
+
+<aixm_role> -> <Text>
+
+<aixm_routeFormed> -> ε
+
+<aixm_rule> -> <Text>
+
+<aixm_runwayDirection> -> ε
+
+<aixm_sector> -> <aixm_CircleSector>
+
+<aixm_selection> -> <aixm_ConditionCombination>
+
+<aixm_selectiveCall> -> <Text>
+
+<aixm_sequenceNumber> -> <Text>
+
+<aixm_sequencedFlashing> -> <Text>
+
+<aixm_servedAirport> -> ε
+
+<aixm_servedCity> -> <aixm_City>
+
+<aixm_servedRunwayDirection> -> ε
+
+<aixm_serviceProvider> -> ε
+
+<aixm_signalPerformance> -> <Text>
+
+<aixm_signalType> -> <Text>
+
+<aixm_slope> -> <Text>
+
+<aixm_slopeAngle> -> <Text>
+
+<aixm_specialDateAuthority> -> ε
+
+<aixm_speedLimit> -> <Text>
+
+<aixm_start> -> <aixm_EnRouteSegmentPoint>
+
+<aixm_startDate> -> <Text>
+
+<aixm_startEvent> -> <Text>
+
+<aixm_startTime> -> <Text>
+
+<aixm_start_fixDesignatedPoint> -> ε
+
+<aixm_start_navaidSystem> -> ε
+
+<aixm_status> -> <Text>
+
+<aixm_style> -> <Text>
+
+<aixm_supportedGroundLight> -> ε
+
+<aixm_supportedService> -> ε
+
+<aixm_surfaceCondition> -> <Text>
+
+<aixm_surfaceExtent> -> <aixm_Surface>
+
+<aixm_surfaceProperties> -> <aixm_SurfaceCharacteristics>
+
+<aixm_synchronisedLighting> -> <Text>
+                            | ε
+
+<aixm_theAirspace> -> ε
+
+<aixm_theAirspaceVolume> -> <aixm_AirspaceVolume>
+
+<aixm_theAngleIndication> -> ε
+
+<aixm_theNavaidEquipment> -> ε
+
+<aixm_theOrganisationAuthority> -> ε
+
+<aixm_theUnit> -> ε
+
+<aixm_timeInterval> -> <aixm_Timesheet>
+
+<aixm_timeReference> -> <Text>
+
+<aixm_timeSlice> -> <aixm_AeronauticalGroundLightTimeSlice>
+                 | <aixm_AirTrafficControlServiceTimeSlice>
+                 | <aixm_AircraftStandTimeSlice>
+                 | <aixm_AirportHeliportTimeSlice>
+                 | <aixm_AirspaceTimeSlice>
+                 | <aixm_AngleIndicationTimeSlice>
+                 | <aixm_ApproachLightingSystemTimeSlice>
+                 | <aixm_ApronElementTimeSlice>
+                 | <aixm_ApronTimeSlice>
+                 | <aixm_AuthorityForAirspaceTimeSlice>
+                 | <aixm_ChangeOverPointTimeSlice>
+                 | <aixm_DMETimeSlice>
+                 | <aixm_DesignatedPointTimeSlice>
+                 | <aixm_DistanceIndicationTimeSlice>
+                 | <aixm_GeoBorderTimeSlice>
+                 | <aixm_GlidepathTimeSlice>
+                 | <aixm_GuidanceLineMarkingTimeSlice>
+                 | <aixm_GuidanceLineTimeSlice>
+                 | <aixm_HoldingPatternTimeSlice>
+                 | <aixm_InformationServiceTimeSlice>
+                 | <aixm_LocalizerTimeSlice>
+                 | <aixm_MarkerBeaconTimeSlice>
+                 | <aixm_NDBTimeSlice>
+                 | <aixm_NavaidTimeSlice>
+                 | <aixm_ObstacleAreaTimeSlice>
+                 | <aixm_OrganisationAuthorityTimeSlice>
+                 | <aixm_RadioCommunicationChannelTimeSlice>
+                 | <aixm_RadioFrequencyAreaTimeSlice>
+                 | <aixm_RouteSegmentTimeSlice>
+                 | <aixm_RouteTimeSlice>
+                 | <aixm_RunwayCentrelinePointTimeSlice>
+                 | <aixm_RunwayDirectionLightSystemTimeSlice>
+                 | <aixm_RunwayDirectionTimeSlice>
+                 | <aixm_RunwayElementTimeSlice>
+                 | <aixm_RunwayMarkingTimeSlice>
+                 | <aixm_RunwayTimeSlice>
+                 | <aixm_SearchRescueServiceTimeSlice>
+                 | <aixm_SpecialDateTimeSlice>
+                 | <aixm_TACANTimeSlice>
+                 | <aixm_TaxiHoldingPositionMarkingTimeSlice>
+                 | <aixm_TaxiHoldingPositionTimeSlice>
+                 | <aixm_TaxiwayElementTimeSlice>
+                 | <aixm_TaxiwayTimeSlice>
+                 | <aixm_TouchDownLiftOffTimeSlice>
+                 | <aixm_UnitTimeSlice>
+                 | <aixm_VORTimeSlice>
+                 | <aixm_VerticalStructureTimeSlice>
+                 | <aixm_VisualGlideSlopeIndicatorTimeSlice>
+
+<aixm_toAngle> -> <Text>
+
+<aixm_transitionAltitude> -> <Text>
+
+<aixm_translatedNote> -> <aixm_LinguisticNote>
+
+<aixm_trueBearing> -> <Text>
+                   | ε
+
+<aixm_trueBearingAccuracy> -> <Text>
+                           | ε
+
+<aixm_turnDirection> -> <Text>
+
+<aixm_type> -> <Text>
+            | ε
+
+<aixm_upperLimit> -> <Text>
+
+<aixm_upperLimitReference> -> <Text>
+
+<aixm_usage> -> <aixm_AirportHeliportUsage>
+
+<aixm_usedRunway> -> ε
+
+<aixm_user> -> ε
+
+<aixm_verticalAccuracy> -> <Text>
+                        | ε
+
+<aixm_verticalDatum> -> <Text>
+                     | ε
+
+<aixm_verticalExtent> -> <Text>
+                      | ε
+
+<aixm_verticalExtentAccuracy> -> <Text>
+                              | ε
+
+<aixm_visibleMaterial> -> ε
+
+<aixm_voice> -> <Text>
+
+<aixm_width> -> <Text>
+             | ε
+
+<aixm_widthAccuracy> -> <Text>
+                     | ε
+
+<aixm_widthLeft> -> <Text>
+
+<aixm_widthRight> -> <Text>
+
+<aixm_widthStrip> -> <Text>
+
+<aixm_zeroBearingDirection> -> ε
+
+<gco_CharacterString> -> <Text>
+
+<gco_DateTime> -> <Text>
+
+<gco_Decimal> -> <Text>
+
+<gmd_CI_Citation> -> <gmd_title> <gmd_date>
+
+<gmd_CI_Contact> -> <gmd_onlineResource>
+
+<gmd_CI_Date> -> <gmd_date> <gmd_dateType>
+
+<gmd_CI_DateTypeCode> -> <Text>
+
+<gmd_CI_OnlineResource> -> <gmd_linkage>
+                        | <gmd_linkage> <gmd_name>
+
+<gmd_CI_ResponsibleParty> -> <gmd_individualName> <gmd_organisationName> <gmd_contactInfo> <gmd_role>
+                          | <gmd_organisationName> <gmd_contactInfo> <gmd_role>
+
+<gmd_CI_RoleCode> -> <Text>
+
+<gmd_EX_Extent> -> <gmd_geographicElement>
+
+<gmd_EX_GeographicBoundingBox> -> <gmd_westBoundLongitude> <gmd_eastBoundLongitude> <gmd_southBoundLatitude> <gmd_northBoundLatitude>
+
+<gmd_MD_CharacterSetCode> -> <Text>
+
+<gmd_MD_Constraints> -> <gmd_useLimitation>
+
+<gmd_MD_DataIdentification> -> <gmd_citation> <gmd_abstract> <gmd_pointOfContact> <gmd_resourceConstraints> <gmd_language> <gmd_topicCategory> <gmd_extent>
+
+<gmd_MD_Metadata> -> <gmd_characterSet> <gmd_contact> <gmd_dateStamp> <gmd_identificationInfo>
+
+<gmd_MD_TopicCategoryCode> -> <Text>
+
+<gmd_URL> -> <Text>
+
+<gmd_abstract> -> <gco_CharacterString>
+
+<gmd_characterSet> -> <gmd_MD_CharacterSetCode>
+
+<gmd_citation> -> <gmd_CI_Citation>
+
+<gmd_contact> -> <gmd_CI_ResponsibleParty>
+
+<gmd_contactInfo> -> <gmd_CI_Contact>
+
+<gmd_date> -> <gco_DateTime>
+           | <gmd_CI_Date>
+
+<gmd_dateStamp> -> <gco_DateTime>
+
+<gmd_dateType> -> <gmd_CI_DateTypeCode>
+
+<gmd_eastBoundLongitude> -> <gco_Decimal>
+
+<gmd_extent> -> <gmd_EX_Extent>
+
+<gmd_geographicElement> -> <gmd_EX_GeographicBoundingBox>
+
+<gmd_identificationInfo> -> <gmd_MD_DataIdentification>
+
+<gmd_individualName> -> <gco_CharacterString>
+
+<gmd_language> -> <gco_CharacterString>
+
+<gmd_linkage> -> <gmd_URL>
+
+<gmd_name> -> <gco_CharacterString>
+
+<gmd_northBoundLatitude> -> <gco_Decimal>
+
+<gmd_onlineResource> -> <gmd_CI_OnlineResource>
+
+<gmd_organisationName> -> <gco_CharacterString>
+
+<gmd_pointOfContact> -> <gmd_CI_ResponsibleParty>
+
+<gmd_resourceConstraints> -> <gmd_MD_Constraints>
+
+<gmd_role> -> <gmd_CI_RoleCode>
+
+<gmd_southBoundLatitude> -> <gco_Decimal>
+
+<gmd_title> -> <gco_CharacterString>
+
+<gmd_topicCategory> -> <gmd_MD_TopicCategoryCode>
+
+<gmd_useLimitation> -> <gco_CharacterString>
+
+<gmd_westBoundLongitude> -> <gco_Decimal>
+
+<gml_ArcByCenterPoint> -> <gml_posList> <gml_radius> <gml_startAngle> <gml_endAngle>
+
+<gml_CircleByCenterPoint> -> <gml_pointProperty> <gml_radius>
+                          | <gml_posList> <gml_radius>
+
+<gml_Curve> -> <gml_segments>
+
+<gml_Envelope> -> <gml_lowerCorner> <gml_upperCorner>
+
+<gml_Geodesic> -> <gml_posList>
+
+<gml_GeodesicString> -> <gml_posList>
+
+<gml_PolygonPatch> -> <gml_exterior>
+
+<gml_Ring> -> <gml_curveMember>
+           | <gml_curveMember> <gml_curveMember> <gml_curveMember>
+
+<gml_TimePeriod> -> <gml_beginPosition> <gml_endPosition>
+
+<gml_beginPosition> -> <Text>
+
+<gml_boundedBy> -> <gml_Envelope>
+                | ε
+
+<gml_curveMember> -> <aixm_Curve>
+                  | <gml_Curve>
+                  | ε
+
+<gml_endAngle> -> <Text>
+
+<gml_endPosition> -> <Text>
+                  | ε
+
+<gml_exterior> -> <gml_Ring>
+
+<gml_identifier> -> <Text>
+
+<gml_lowerCorner> -> <Text>
+
+<gml_patches> -> <gml_PolygonPatch>
+
+<gml_pointProperty> -> <aixm_Point>
+                    | ε
+
+<gml_pos> -> <Text>
+
+<gml_posList> -> <Text>
+
+<gml_radius> -> <Text>
+
+<gml_segments> -> <gml_CircleByCenterPoint>
+               | <gml_Geodesic>
+               | <gml_GeodesicString>
+               | <gml_GeodesicString> <gml_ArcByCenterPoint> <gml_GeodesicString>
+
+<gml_startAngle> -> <Text>
+
+<gml_upperCorner> -> <Text>
+
+<gml_validTime> -> <gml_TimePeriod>
+
+<message_AIXMBasicMessage> -> <gml_boundedBy> <aixm_messageMetadata> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember> <message_hasMember>
+
+<message_hasMember> -> <aixm_AeronauticalGroundLight>
+                    | <aixm_AirTrafficControlService>
+                    | <aixm_AircraftStand>
+                    | <aixm_AirportHeliport>
+                    | <aixm_Airspace>
+                    | <aixm_AngleIndication>
+                    | <aixm_ApproachLightingSystem>
+                    | <aixm_Apron>
+                    | <aixm_ApronElement>
+                    | <aixm_AuthorityForAirspace>
+                    | <aixm_ChangeOverPoint>
+                    | <aixm_DME>
+                    | <aixm_DesignatedPoint>
+                    | <aixm_DistanceIndication>
+                    | <aixm_GeoBorder>
+                    | <aixm_Glidepath>
+                    | <aixm_GuidanceLine>
+                    | <aixm_GuidanceLineMarking>
+                    | <aixm_HoldingPattern>
+                    | <aixm_InformationService>
+                    | <aixm_Localizer>
+                    | <aixm_MarkerBeacon>
+                    | <aixm_NDB>
+                    | <aixm_Navaid>
+                    | <aixm_ObstacleArea>
+                    | <aixm_OrganisationAuthority>
+                    | <aixm_RadioCommunicationChannel>
+                    | <aixm_RadioFrequencyArea>
+                    | <aixm_Route>
+                    | <aixm_RouteSegment>
+                    | <aixm_Runway>
+                    | <aixm_RunwayCentrelinePoint>
+                    | <aixm_RunwayDirection>
+                    | <aixm_RunwayDirectionLightSystem>
+                    | <aixm_RunwayElement>
+                    | <aixm_RunwayMarking>
+                    | <aixm_SearchRescueService>
+                    | <aixm_SpecialDate>
+                    | <aixm_TACAN>
+                    | <aixm_TaxiHoldingPosition>
+                    | <aixm_TaxiHoldingPositionMarking>
+                    | <aixm_Taxiway>
+                    | <aixm_TaxiwayElement>
+                    | <aixm_TouchDownLiftOff>
+                    | <aixm_Unit>
+                    | <aixm_VOR>
+                    | <aixm_VerticalStructure>
+                    | <aixm_VisualGlideSlopeIndicator>
+
+<Text> -> string
+<Integer> -> digit+
+<Decimal> -> digit+ '.' digit+
+<ICAOCode> -> [A-Z][A-Z][A-Z][A-Z]
